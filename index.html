@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astria Academy</title>
+    <link rel="stylesheet" href="mode.css">
+    <style>
+        /* Notification Popup Styles */
+        .notification-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        
+        .notification-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .notification-popup {
+            background-color: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 90%;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+        
+        .notification-overlay.active .notification-popup {
+            transform: scale(1);
+        }
+        
+        .notification-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .notification-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        
+        .notification-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .notification-btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Notification Popup -->
+    <div class="notification-overlay" id="notificationOverlay">
+        <div class="notification-popup">
+            <img src="/chatgpt.png" alt="Notification Image" class="notification-image" id="notificationImage">
+            <p class="notification-text" id="notificationText">Persiapkan diri Anda untuk ujian sekolah. <br> Dibuat oleh Maba IPB</p>
+            <button class="notification-btn" id="notificationBtn">OK</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzJlY2M3MSIvPgo8cGF0aCBkPSJNMjAgMTBDMTUgMTAgMTEgMTQgMTEgMTlWMjlIMTVWMTlDMTUgMTYuMiAxNy4yIDE0IDIwIDE0QzIyLjggMTQgMjUgMTYuMiAyNSAxOVYyOUgyOVYxOUMyOSAxNCAyNSAxMCAyMCAxMFoiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjIwIiBjeT0iMjIiIHI9IjMiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==" alt="SainsIn Logo">
+            <h1>Astria Academy</h1>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Improved Countdown Timer -->
+        <div class="countdown-section">
+            <div class="countdown-title">Waktu Selesai Ujian Sekolah</div>
+            <div class="countdown-container" id="countdown-container">
+                <!-- Will be filled by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Tryout Header -->
+        <div class="header">
+            <h2>KISI-KISI UJIAN SEKOLAH SMAN 101</h2>
+        </div>
+        
+        <!-- Tryout Grid -->
+        <div class="tryout-grid">
+            <!-- Tryout Card 1 -->
+            <a href="/mapel lain/mtk.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♔</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Matematika</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Tryout Card 2 -->
+            <a href="/Sosiologi/lobby.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-label">Ujian</div>
+                    <div class="number">♕</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Sosiologi</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/mapel lain/ekonomi.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♖</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Ekonomi</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/mapel lain/geografi.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♗</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Geografi</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="/mapel lain/sejarah.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♘</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Sejarah</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/mapel lain/islamic.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♙</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Islamic</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/mapel lain/bindo.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♛</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Indonesia</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="tryout-detail.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-label">Ujian</div>
+                    <div class="number">♜</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">PPKN</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/mapel lain/pkwu.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♝</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">PKWU</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/mapel lain/seni.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-labelred">Ujian</div>
+                    <div class="number">♞</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Seni Tari</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="tryout-detail.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-label">Ujian</div>
+                    <div class="number">♟</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">Informatika</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="tryout-detail.html" class="tryout-card">
+                <div class="number-box">
+                    <div class="snbt-label">Ujian</div>
+                    <div class="number">♣</div>
+                </div>
+                <div class="tryout-info">
+                    <div>
+                        <div class="free-label">Gratis</div>
+                        <div class="tryout-title">PJOK</div>
+                    </div>
+                    <div class="tryout-meta">
+                        <i class="fas fa-star star"></i>
+                        <div class="school">
+                            <i class="fas fa-users"></i>
+                            SMAN 101
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Notification Popup Script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get notification elements
+            const notificationOverlay = document.getElementById('notificationOverlay');
+            const notificationBtn = document.getElementById('notificationBtn');
+            const notificationImage = document.getElementById('notificationImage');
+            const notificationText = document.getElementById('notificationText');
+            
+            // Set notification content (you can customize these)
+            notificationImage.src = "/chatgpt.png"; // Replace with your actual image path
+            notificationText.textContent = "Persiapkan diri Anda untuk ujian sekolah [Dibuat Oleh Maba IPB]";
+            
+            // Show notification after a short delay
+            setTimeout(function() {
+                notificationOverlay.classList.add('active');
+            }, 500);
+            
+            // Close notification when OK button is clicked
+            notificationBtn.addEventListener('click', function() {
+                notificationOverlay.classList.remove('active');
+            });
+            
+            // Also close when clicking outside the popup (optional)
+            notificationOverlay.addEventListener('click', function(e) {
+                if (e.target === notificationOverlay) {
+                    notificationOverlay.classList.remove('active');
+                }
+            });
+        });
+
+        // Improved Countdown Timer to April 21
+        function updateCountdown() {
+            const targetDate = new Date('April 21, 2025 09:00:00').getTime();
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+            
+            // Calculate days, hours, minutes, seconds
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            // Create countdown HTML
+            const countdownContainer = document.getElementById('countdown-container');
+            
+            // If countdown is over
+            if (timeLeft < 0) {
+                countdownContainer.innerHTML = `
+                    <div class="countdown-box">
+                        <div class="countdown-value">0</div>
+                        <div class="countdown-label">Tryout sudah dimulai!</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Update countdown display
+            countdownContainer.innerHTML = `
+                <div class="countdown-box">
+                    <div class="countdown-value">${days}</div>
+                    <div class="countdown-label">Hari</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-value">${hours}</div>
+                    <div class="countdown-label">Jam</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-value">${minutes}</div>
+                    <div class="countdown-label">Menit</div>
+                </div>
+                <div class="countdown-box">
+                    <div class="countdown-value">${seconds}</div>
+                    <div class="countdown-label">Detik</div>
+                </div>
+            `;
+        }
+        
+        // Update countdown every second
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

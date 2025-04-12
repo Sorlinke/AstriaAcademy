@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Online - SainsIn</title>
+    <link rel="stylesheet" href="/mode.css">
+    <style></style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzJlY2M3MSIvPgo8cGF0aCBkPSJNMjAgMTBDMTUgMTAgMTEgMTQgMTEgMTlWMjlIMTVWMTlDMTUgMTYuMiAxNy4yIDE0IDIwIDE0QzIyLjggMTQgMjUgMTYuMiAyNSAxOVYyOUgyOVYxOUMyOSAxNCAyNSAxMCAyMCAxMFoiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjIwIiBjeT0iMjIiIHI9IjMiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==" alt="SainsIn Logo">
+            <h1>Astria Academy</h1>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div id="loading" class="loading">
+            <i class="fas fa-spinner"></i> Memuat soal ujian...
+        </div>
+        
+        <div id="exam-content" style="display: none;">
+            <div class="exam-header">
+                <h1 id="exam-title">Ujian Online</h1>
+                <p id="exam-description">Jawablah pertanyaan berikut dengan benar</p>
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer" id="timer">00:00</div>
+            </div>
+            
+            <form id="exam-form">
+                <!-- Questions will be dynamically inserted here -->
+                
+                <button type="button" id="submit-btn" class="submit-btn">Selesai & Lihat Hasil</button>
+            </form>
+            
+            <div class="result-container" id="result-container">
+                <div class="result-header">Hasil Ujian Anda</div>
+                <div class="score" id="score">0/0</div>
+                <div class="result-message" id="result-message">Anda telah menyelesaikan ujian.</div>
+                <button type="button" id="review-btn" class="review-btn">Lihat Jawaban</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Global variables
+        let examData = null;
+        let correctAnswers = {};
+        let totalPoints = 0;
+        
+        // Load exam data from JSON
+        async function loadExamData() {
+            try {
+                // In a real application, you would fetch this from a server
+                // For this example, we'll use the JSON directly
+                const response = await fetch('questions.json');
+                examData = await response.json();
+                
+                // Initialize the exam
+                initializeExam(examData.exam);
+                
+                // Hide loading and show exam content
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('exam-content').style.display = 'block';
+                
+                // Start the timer
+                startTimer(examData.exam.timeInMinutes * 60, document.getElementById('timer'));
+            } catch (error) {
+                console.error('Error loading exam data:', error);
+                document.getElementById('loading').innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error loading exam data. Please refresh the page.';
+            }
+        }
+        
+        // Initialize the exam with data from JSON
+        function initializeExam(exam) {
+            // Set exam title and description
+            document.getElementById('exam-title').textContent = exam.title;
+            document.getElementById('exam-description').textContent = exam.description;
+            
+            // Create question containers
+            const examForm = document.getElementById('exam-form');
+            const submitBtn = document.getElementById('submit-btn');
+            
+            // Remove any existing questions (except the submit button)
+            while (examForm.firstChild && examForm.firstChild !== submitBtn) {
+                examForm.removeChild(examForm.firstChild);
+            }
+            
+            // Add questions
+            exam.questions.forEach((question, index) => {
+                // Create question container
+                const questionContainer = document.createElement('div');
+                
+                questionContainer.className = 'question-container';
+                
+                // Create question header
+                const questionHeader = document.createElement('div');
+                questionHeader.className = 'question-header';
+                
+                const questionNumber = document.createElement('div');
+                questionNumber.className = 'question-number';
+                questionNumber.textContent = `Pertanyaan ${index + 1} dari ${exam.questions.length}`;
+                
+                const points = document.createElement('div');
+                points.className = 'points';
+                points.innerHTML = `<i class="fas fa-trophy"></i> ${question.points} Points`;
+                
+                questionHeader.appendChild(questionNumber);
+                questionHeader.appendChild(points);
+                
+                // Create question text
+                const questionText = document.createElement('div');
+                questionText.className = 'question-text';
+                questionText.textContent = question.text;
+                
+                // Add image if question has one
+                if (question.type === 'image' && question.imageUrl) {
+                    const questionImage = document.createElement('img');
+                    questionImage.src = question.imageUrl;
+                    questionImage.alt = 'Gambar Soal';
+                    questionImage.className = 'question-image';
+                    questionContainer.appendChild(questionHeader);
+                    questionContainer.appendChild(questionText);
+                    questionContainer.appendChild(questionImage);
+                } else {
+                    questionContainer.appendChild(questionHeader);
+                    questionContainer.appendChild(questionText);
+                }
+                
+                // Create options
+                const options = document.createElement('div');
+                options.className = 'options';
+                
+                question.options.forEach(option => {
+                    const optionElement = document.createElement('label');
+                    optionElement.className = 'option';
+                    optionElement.htmlFor = `${question.id}-${option.id}`;
+                    
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+                    input.name = question.id;
+                    input.id = `${question.id}-${option.id}`;
+                    input.value = option.id;
+                    
+                    const optionLabel = document.createElement('div');
+                    optionLabel.className = 'option-label';
+                    
+                    const optionCircle = document.createElement('div');
+                    optionCircle.className = 'option-circle';
+                    optionCircle.textContent = option.id;
+                    
+                    const optionText = document.createElement('div');
+                    optionText.className = 'option-text';
+                    optionText.textContent = option.text;
+                    
+                    optionLabel.appendChild(optionCircle);
+                    optionLabel.appendChild(optionText);
+                    
+                    optionElement.appendChild(input);
+                    optionElement.appendChild(optionLabel);
+                    
+                    options.appendChild(optionElement);
+                });
+                
+                questionContainer.appendChild(options);
+                
+                // Insert question container before submit button
+                examForm.insertBefore(questionContainer, submitBtn);
+                
+                // Store correct answer
+                correctAnswers[question.id] = question.correctAnswer;
+                totalPoints += question.points;
+            });
+            
+            // Add event listeners to options
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all options in the same question
+                    const name = this.querySelector('input').name;
+                    document.querySelectorAll(`input[name="${name}"]`).forEach(input => {
+                        input.closest('.option').classList.remove('selected');
+                    });
+                    
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                });
+            });
+            
+            // Submit button event listener
+            document.getElementById('submit-btn').addEventListener('click', submitExam);
+            
+            // Review button event listener
+            document.getElementById('review-btn').addEventListener('click', reviewAnswers);
+        }
+        
+        // Timer functionality
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.textContent = "00:00";
+                    submitExam();
+                }
+            }, 1000);
+        }
+        
+        // Submit exam function
+        function submitExam() {
+            // Calculate score
+            let score = 0;
+            
+            for (const [questionId, answer] of Object.entries(correctAnswers)) {
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                if (selectedOption && selectedOption.value === answer) {
+                    score += examData.exam.questions.find(q => q.id === questionId).points;
+                }
+            }
+            
+            // Display results
+            document.getElementById('score').textContent = score + "/" + totalPoints;
+            
+            // Display message based on score
+            const resultMessage = document.getElementById('result-message');
+            const percentage = (score / totalPoints) * 100;
+            
+            if (percentage >= 80) {
+                resultMessage.textContent = "Selamat! Anda mendapatkan nilai yang sangat baik.";
+            } else if (percentage >= 60) {
+                resultMessage.textContent = "Bagus! Anda telah lulus ujian ini.";
+            } else {
+                resultMessage.textContent = "Anda perlu belajar lebih giat lagi.";
+            }
+            
+            // Show result container
+            document.getElementById('result-container').style.display = 'block';
+            
+            // Hide submit button
+            document.getElementById('submit-btn').style.display = 'none';
+            
+            // Disable all inputs
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+            
+            // Scroll to results
+            document.getElementById('result-container').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Review answers function
+        function reviewAnswers() {
+            // For each question, mark correct and wrong answers
+            for (const [questionId, answer] of Object.entries(correctAnswers)) {
+                const selectedOption = document.querySelector(`input[name="${questionId}"]:checked`);
+                const correctOption = document.querySelector(`input[name="${questionId}"][value="${answer}"]`);
+                
+                // Mark correct answer
+                correctOption.closest('.option').classList.add('correct-answer');
+                correctOption.closest('.option').querySelector('.option-label').innerHTML += '<span class="answer-indicator correct-indicator"> ✓ Jawaban Benar</span>';
+                
+                // If selected answer is wrong, mark it
+                if (selectedOption && selectedOption.value !== answer) {
+                    selectedOption.closest('.option').classList.add('wrong-answer');
+                    selectedOption.closest('.option').querySelector('.option-label').innerHTML += '<span class="answer-indicator wrong-indicator"> ✗ Jawaban Salah</span>';
+                }
+            }
+            
+            // Hide review button
+            document.getElementById('review-btn').style.display = 'none';
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Load exam data when page loads
+        window.onload = loadExamData;
+    </script>
+</body>
+</html>
