@@ -1,0 +1,588 @@
+{
+    "exam": {
+      "title": "Ujian Sekolah Sosiologi",
+      "description": "Jawablah pertanyaan berikut dengan benar",
+      "timeInMinutes": 20,
+      "questions": [
+            {
+      "id": "q1",
+      "text": "Cocokan Teori – teori di bawah berdasarkan dengan nama tokohnya",
+      "type": "image",
+      "imageUrl": "../Sosiologi/img1.png",
+      "points": 10,
+      "options": [
+        {"id": "A", "text": "A dan 3, B dan 1, C dan 2"},
+        {"id": "B", "text": "A dan 2, B dan 3, C dan 1"},
+        {"id": "C", "text": "A dan 3, B dan 2, C dan 1"},
+        {"id": "D", "text": "A dan 2, B dan 1, C dan 3"},
+        {"id": "E", "text": "A dan 1, B dan 2, C dan 3"}
+      ],
+      "correctAnswer": "A"
+    },
+  {
+    "id": "q2",
+    "imageUrl": "../Sosiologi/img2.png",
+    "text": "Dari pernyataan di bawah , mana yang merupakan ciri ciri sosiologi?",
+    "type": "image",
+      
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "1, 3, dan 4"},
+      {"id": "B", "text": "2, 4, dan 5"},
+      {"id": "C", "text": "1, 2, dan 3"},
+      {"id": "D", "text": "2, 3, dan 4"},
+      {"id": "E", "text": "1, 3, dan 5"}
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "q3",
+    "text": "Rudi sering melihat teman nya mengalami perundungan di sekolah, suatu saat rudi ikut menenangkan temannya yang menjadi korban perundungan. Rudi saat itu hanya memberikan motivasi saja, Hal tersebut dilakukan sebagai cara dalam mengumpulkan data. Teknik pengumpulan data yang dilakukan Rudi adalah ….",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Sampling"},
+      {"id": "B", "text": "Wawancara"},
+      {"id": "C", "text": "Observasi"},
+      {"id": "D", "text": "Studi Pustaka"},
+      {"id": "E", "text": "Kuesioner"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q4",
+    "text": "Berdasarkan data pada tabel di bawah, proses pengolahan data telah memasuki tahap...",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img3.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Pemeriksaan"},
+      {"id": "B", "text": "Pengkodean"},
+      {"id": "C", "text": "Verifikasi"},
+      {"id": "D", "text": "Tabulasi"},
+      {"id": "E", "text": "Reduksi"}
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "q5",
+    "text": "Sampah anorganik lebih lama terurai dibandingkan dengan sampah organik. Waktu dekomposisi popok sekali pakai lebih lama dari plastik, namun kurang dari kulit sintetis. Berapa waktu dekomposisi yang mungkin dari popok sekali pakai?",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img4.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "100 tahun"},
+      {"id": "B", "text": "250 tahun"},
+      {"id": "C", "text": "375 tahun"},
+      {"id": "D", "text": "5 tahun"},
+      {"id": "E", "text": "575 tahun"}
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "q6",
+    "text": "Menteri Pendidikan dan Kebudayaan (Mendikbud) menegaskan, dalam melakukan perbaikan, Kemendikbud mendasarkan program-program pada delapan standar pendidikan. Pada aspek pembiayaan, Kemendikbud telah menganggarkan dana Bantuan Operasional Sekolah (BOS) pada jenjang Sekolah Dasar (SD) dan sekolah menengah. Ilustrasi tersebut merupakan upaya pemerintah meningkatkan mutu pendidikan di Indonesia. Fungsi sosiologi pendidikan apa yang digunakan pemerintah melakukan upaya tersebut...",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Fungsi prediksi"},
+      {"id": "B", "text": "Fungsi utilisasi"},
+      {"id": "C", "text": "Fungsi eksplanasi"},
+      {"id": "D", "text": "Fungsi penelitian"},
+      {"id": "E", "text": "Fungsi pembangunan"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q7",
+    "text": "Pada dasarnya bentuk interaksi sosial terbagi menjadi dua yaitu asosiastif dan disosiatif. Interaksi sosial asosiatif ada beberapa macam. Dari gambar dibawah merupakan interaksi sosial asosiatif yaitu...",
+    "type": "image",
+    "imageUrl":"/Sosiologi/img5.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Asimilasi"},
+      {"id": "B", "text": "Akulturasi"},
+      {"id": "C", "text": "Kerja sama"},
+      {"id": "D", "text": "Peperangan"},
+      {"id": "E", "text": "Akomodasi"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q8",
+    "text": "Akhir-akhir ini masyarakat Indonesia berbondong-bondong memboikot produk-produk yang berhubungan dengan Israel karena masyarakat Indonesia sangat menentang adanya genosida di Gaza Palestina, hal ini karena keuntungan dari produk Israel digunakan untuk membeli senjata yang mereka gunakan dalam genosida di Gaza Palestina. Dari ilustrasi di atas faktor interaksi sosial yang terjadi di masyarakat adalah …",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Identifikasi"},
+      {"id": "B", "text": "Sugesti"},
+      {"id": "C", "text": "Imitasi"},
+      {"id": "D", "text": "Simpati"},
+      {"id": "E", "text": "Empati"}
+    ],
+    "correctAnswer": "E"
+  },
+  {
+    "id": "q9",
+    "text": "Di lembaga pendidikan, konseling antara guru dan murid telah mengalami evolusi yang signifikan. Bukan hanya dalam lingkungan kelas, melainkan juga melalui platform daring. Guru dapat memberikan bimbingan akademis dan personal kepada muridnya. Melalui konseling ini, guru dapat lebih memahami kebutuhan dan potensi masing-masing murid, membantu mereka mengatasi kesulitan belajar, serta memberikan arahan untuk mengembangkan diri. Dari ilustrasi teks tersebut fungsi dari lembaga sosial adalah....",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "untuk menjaga keutuhan masyarakat yang saling berhubungan  atau bersangkutan"},
+      {"id": "B", "text": "untuk memberikan pedoman kepada masyarakat untuk dapat mengadakan sistem pengendalian sosial"},
+      {"id": "C", "text": "Untuk memberikan arahan kepada Individu/kelompok luas tentang bagaimana setiap individu harus bersikap dalam mengatasi masalah"},
+      {"id": "D", "text": "Untuk mengatur kehidupan bermasyarakat karena punya kaidah sosial"},
+      {"id": "E", "text": "Untuk pengembangan budaya seni, lingkungan hingga ilmu pengetahuan dalam masyarakat"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q10",
+    "text": "Lembaga kepolisian diperlukan masyarakat dalam rangka memperoleh tatanan kehidupan yang harmoni di antara warga masyarakat. Bila terjadi penyimpangan hukum dan anggota masyarakat maka lembaga tersebut diharapkan dapat memulihkan pada tatanan yang benar. Pembentukan lembaga tersebut bertujuan untuk...",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "mengatur kekuasaan hukum negara"},
+      {"id": "B", "text": "memberikan rasa aman dalam kehidupan bermasyarakat"},
+      {"id": "C", "text": "menurunkan kesejahteraan masyarakat"},
+      {"id": "D", "text": "melakukan teror terhadap pelaku kriminal"},
+      {"id": "E", "text": "menangkap anggota masyarakat yang kontra dengan polisi"}
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "q11",
+    "text": "Pada suatu sekolah, terdapat dua kelompok yang berbeda dalam kelas: kelompok A dan kelompok B. Kelompok A terdiri dari siswa-siswa yang mayoritas berasal dari latar belakang budaya yang sama. Mereka berbicara dalam bahasa yang sama, memiliki tradisi yang serupa, dan berbagi kepercayaan yang sama. Karena kesamaan ini, mereka merasa nyaman berinteraksi satu sama lain, membuat kelompok A menjadi homogen dari segi identitas budaya. Sementara itu, kelompok B terdiri dari siswa-siswa dengan latar belakang budaya yang beragam. Beberapa dari mereka berasal dari latar belakang etnis yang berbeda, beberapa berbicara dalam bahasa ibu yang berbeda, dan mereka memiliki kepercayaan dan tradisi yang beragam pula. Namun, meskipun berbeda-beda, mereka berkumpul dalam kelompok B untuk tujuan pembelajaran yang sama. Berdasarkan ilustrasi tersebut, masalah timbulnya kelompok homogen/heterogen tersebut karena...",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Adanya perbedaan identitas  kelompok a dan kelompok b"},
+      {"id": "B", "text": "Adanya perbedaan latar belakang kelompok a dan kelompok b"},
+      {"id": "C", "text": "Adanya persamaan kelompok a dan kelompok b dalam kepercayaan dan tradisi nya."},
+      {"id": "D", "text": "Adanya ketidak akuran antara kelompok a dan b sehingga tidak ada jalan keluarnya"},
+      {"id": "E", "text": "Adanya interaksi antara kelompok a dan kelompok b"}
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "q12",
+    "text": "Berdasarkan gambar di samping, struktur sosial dalam masyarakat tersebut disebabkan oleh faktor …",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img6.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "keturunan"},
+      {"id": "B", "text": "pendidikan"},
+      {"id": "C", "text": "kehormatan"},
+      {"id": "D", "text": "kekayaan"},
+      {"id": "E", "text": "pengetahuan"}
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "q13",
+    "text": "Pernyataan yang sesuai dengan bagan mobilitas sosial tersebut adalah…",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img7.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Terjadi mobilitas antargenerasi naik terjadi karena profesi anak memiliki strata sosial yang lebih tinggi"},
+      {"id": "B", "text": "Mobilitas sosial antargenerasi naik terjadi karena profesi anak sama dengan orang tua"},
+      {"id": "C", "text": "Terjadi mobilitas antargenerasi turun karena strata sosial anak lebih rendah dari pada orang tua"},
+      {"id": "D", "text": "Terjadinya mobilitas anatargenerasi horizontal karena profesi anak sama dengan orang tua"},
+      {"id": "E", "text": "Terjadinya mobilitas anatrgenerasi horizontal antara anak ke-1 dan ke-2"}
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "q14",
+    "text": "Pada gambar diatas disajikan ilustrasi 3 wanita yang memiliki identitas yang berbeda gambar tersebut merupakan perbedaan identitas sosial yang disebabkan oleh ...",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img8.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "perbedaan iklim atau cuaca"},
+      {"id": "B", "text": "pengaruh budaya asing"},
+      {"id": "C", "text": "latar belakang agama"},
+      {"id": "D", "text": "adanya isolasi geografis"},
+      {"id": "E", "text": "perbedaan ras dan suku bangsa"}
+    ],
+    "correctAnswer": "E"
+  },
+  {
+    "id": "q15",
+    "text": "Pada sebuah desa kecil bernama Desa XYZ, terjadi fenomena pembentukan kelompok sosial yang menarik. Sebuah kelompok masyarakat yang awalnya terdiri dari individu-individu dengan latar belakang beragam, kini mulai membentuk kelompok sosial yang solid dan kompak. Ilustrasi ini mencerminkan proses terjadinya kelompok sosial dan faktor-faktor yang mempengaruhinya.Apa yang menjadi ciri utama pembentukan kelompok sosial dalam ilustrasi tersebut?",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Keragaman latar belakang individu"},
+      {"id": "B", "text": "Isolasi dari masyarakat sekitar"},
+      {"id": "C", "text": "Kesamaan genetik di antara anggotanya"},
+      {"id": "D", "text": "Pembentukan kelompok hanya berdasarkan faktor ekonomi"},
+      {"id": "E", "text": "Tidak ada ciri khas pembentukan kelompok"}
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "q16",
+    "text": "Dari ciri-ciri di atas, manakah yang merupakan ciri khas kelompok sosial?",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img9.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "1, 2, 3"},
+      {"id": "B", "text": "2, 3, 4"},
+      {"id": "C", "text": "3, 4, 5"},
+      {"id": "D", "text": "1, 4, 5"},
+      {"id": "E", "text": "2, 4, 5"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q17",
+    "text": "Berdasarkan ilustrasi gambar penggemar karawitan di atas, jenis kelompok sosial yang ada disebut dengan...",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img10.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Kelompok sosial Patembayan"},
+      {"id": "B", "text": "Kelompok sosial Paguyuban"},
+      {"id": "C", "text": "Kelompok sosial Primer"},
+      {"id": "D", "text": "Kelompok sosial Sekunder"},
+      {"id": "E", "text": "Kelompok sosial In group"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q18",
+    "text": "Saat ini banyak perusahaan menawarkan lowongan pekerjaan posisi management trainee (MT). Karyawan yang mengikuti program MT harus memiliki kriteria tertentu. Jika karyawan tidak memenuhi kriteria maka akan tereliminasi. Bentuk kelompok sosial berdasarkan ilustrasi di atas adalah....",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "kelompok sekunder"},
+      {"id": "B", "text": "kelompok referensi"},
+      {"id": "C", "text": "kelompok primer"},
+      {"id": "D", "text": "paguyuban"},
+      {"id": "E", "text": "Kerumunan"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q19",
+    "text": "Pada gambar diatas, terdapat para kartel yang membawa kabur bahan-bahan sumber daya makanan, dampak yang bisa ditimbulkan dalam bidang ekonomi adalah?",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img11.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Efisiensi Waktu"},
+      {"id": "B", "text": "pembagian wilayah"},
+      {"id": "C", "text": "Pengendalian Harga"},
+      {"id": "D", "text": "Membantu perekonomian Negara"},
+      {"id": "E", "text": "Mendapatkan Uang Sebanyak Banyaknya"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q20",
+    "text": "Korupsi, kolusi, dan nepotisme kerap kali memperlemah hukum di negara kita. Namun, hal tersebut tetap dibiarkan terjadi oleh sebagian besar masyarakat demi kepentingan pribadi mereka. Bagaimana sikap kita sebagai warga negara agar praktik KKN ini berkurang?",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Membiarkannya karena saya juga mengambil keuntungan"},
+      {"id": "B", "text": "Pasrah karena tidak mungkin didengar"},
+      {"id": "C", "text": "Mulai menanamkan nilai kejujuran pada diri sendiri"},
+      {"id": "D", "text": "Menerapkan prinsip yang mementingkan usaha daripada hasil instan untuk diri sendiri dan lingkungan"},
+      {"id": "E", "text": "Diam untuk berjaga-jaga jika suatu hari butuh"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q21",
+    "text": "Politik sering tidak pernah adil untuk semua orang, tidak pernah bersahabat untuk rakyat miskin. Konstitusi yang menegaskan perlindungan bagi rakyat terjerembap dalam praktik politik partikularistik. Pola politik yang sedemikian sistemik hanya memihak dan melindungi kepentingan sebagian orang, kelompok 'atas'. Apa dampak yang akan ditimbulkan dari contoh pernyataan diatas?",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "para kaum marginal akan terus memadati jalan-jalan kota dan menjadikan hal ini salah satu problem konstitusional paling serius"},
+      {"id": "B", "text": "konstruksi kebijakan publik dengan moralitas sosial yang berangkat dari refleksi atas kemiskinan sosial ekonomi warga."},
+      {"id": "C", "text": "Kesejahteraan dan kemiskinan niscaya mendefinisikan seberapa dekat atau jauh akses warga (miskin) negara"},
+      {"id": "D", "text": "memanfaatkan relasi petinggi perusahaan untuk agar diterima bekerja di perusahaan tersebut."},
+      {"id": "E", "text": "membuat orang lain merasa risih dan tidak nyaman sehingga menyebabkan mereka memisahkan diri dari kelompok sosialnya."}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q22",
+    "text": "Penduduk miskin sering diidentikkan dengan ketidakmampuan memenuhi kebutuhan material sesuai lingkungan di mana mereka berada. Secara fisik antara lain ditandai dengan minimnya kualitas maupun kuantitas pemilikan lahan, rumah tinggal, derajat hidup, tingkat pengetahuan dan akses sosial. Penyebab kemiskinan ditinjau dari rendahnya minimnya pengetahuan adalah …. ",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Kekeringan dan bencana"},
+      {"id": "B", "text": "kebiasaan malas dan pasrah"},
+      {"id": "C", "text": "ketidakadilan oleh penguasa"},
+      {"id": "D", "text": "sumber daya alam kurang"},
+      {"id": "E", "text": "tingkat pendidikan rendah"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q23",
+    "text": "Setiap warga negara memiliki kesetaraan hak dan kewajiban salah satunya adalah pada bidang ekonomi. Berikut adalah pernyataan yang menunjukkan kesetaraan kewajiban dalam bidang ekonomi adalah…",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Membayar pajak dan retribusi secara berkala"},
+      {"id": "B", "text": "Individu bebas memilih calon legislatif secara jujur"},
+      {"id": "C", "text": "Warga negara menaati peraturan saat mengendarai kendaraan bermotor"},
+      {"id": "D", "text": "Menghormati hak asasi manusia dalam kehidupan"},
+      {"id": "E", "text": "Warga negara bebas untuk memeluk agama sesuai keyakinannya"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q24",
+    "text": "Arsyon marah kepada orang tuanya yang tidak membelikannya sepeda motor baru. Arsyon beranggapan dengan sepeda motor baru dapat mendukung aktivitasnya di sekolah. Sementara itu, menurut pandangan orang tua, sepeda motor lama masih bisa dipakai. Jika dilihat dari faktor penyebabnya, konflik di atas disebabkan oleh...",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Perbedaan pendapat dan pemikiran"},
+      {"id": "B", "text": "Kegagalan orang tua melakukan sosialisasi"},
+      {"id": "C", "text": "Perbedaan status sosial antara Arsyon dan orang tuanya"},
+      {"id": "D", "text": "Perilaku deviasi yang dilakukan Arsyon"},
+      {"id": "E", "text": "Pengaruh interaksi primer di sekitar Arsyon"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q25",
+    "text": "Perhatikan gambar berikut! Gambar di atas menggambarkan siswa sedang tawuran antar pelajar. Sangat berdampak kepada masyarakat sekitar bagaimana penanggulangan pemerintah atau masyarakat pada gambar tersebut...",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img12.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Langsung melaporkan kepada polisi agar di penjara"},
+      {"id": "B", "text": "Melaporkan ke sekolah agar anak yang terlibat dikeluarkan dari sekolah"},
+      {"id": "C", "text": "Memanggil para orang tua agar mendidik anaknya dengan benar"},
+      {"id": "D", "text": "Evaluasi strategi penanggulangan dari pemerintah dan masyarakat, termasuk peningkatan keamanan dan pendidikan kesadaran seperti pembangunan program pemuda dan peningkatan kehadiran polisi"},
+      {"id": "E", "text": "membuat penanggulangan dengan Kerjasama antara orangtua, pihak sekolah dan kepolisian dengan melakukan seminar dan penyuluhan berbayar secara online"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q26",
+    "text": "Berdasarkan ilustrasi diatas oknum yang jelas-jelas melakukan tindakan kriminal dan pelanggaran HAM dalam suatu konflik diadili melalui proses ...",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img13.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "mediasi"},
+      {"id": "B", "text": "asimilasi"},
+      {"id": "C", "text": "adjudikasi"},
+      {"id": "D", "text": "kontroversi"},
+      {"id": "E", "text": "partisipasi"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q27",
+    "text": "Masyarakat dapat menggunakan pemetaan konflik untuk memahami dampak konflik. Hal ini dapat menciptakan kesadaran akan risiko dan memotivasi mereka untuk berpartisipasi. dalam upaya penyelesaian  perkotaan seringkali menghadapi dinamika spasial dalam pemukiman, dengan kemungkinan perubahan status sosial dan ekonomi terkait dengan lokasi tempat tinggal mereka.Apa yang dapat diperoleh dari analisis hubungan spasial dalam pemetaan konflik?",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Informasi yang tidak relevan"},
+      {"id": "B", "text": "Pemahaman tentang bagaimana kondisi lingkungan memengaruhi dinamika konflik"},
+      {"id": "C", "text": "Hanya data statistik"},
+      {"id": "D", "text": "Tidak ada implikasi praktis"},
+      {"id": "E", "text": "Tidak diperlukan dalam pemetaan konflik"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q28",
+    "text": "Negara Indonesia adalah negara yang memiliki 6 agama dengan ajaran yang berbeda, diantaranya islam, Kristen khatolik, Kristen prostesta, hindu, budha dan konghucu. Karena bersifat keyakinan, tak jarang ada pandangan bahwa agama yang dianutnya yang paling bener. Tentu saja hal tersebut dapat menimbulkan perpecahan dimasyarakat. Upaya yang dapat dilakukan untuk saling menghargai perbedaan sehingga terjadi harmonis sosial adalah…",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Mengikuti peribadhan yang dilakukan setiap agama agar dapat menghargai perbedaan yang ada."},
+      {"id": "B", "text": "Memberikan kebebasan untuk melakukan aktifitas keagamaan walau tidak sesuai dengan aturan hukum dimasyarakat"},
+      {"id": "C", "text": "Memahami perbedaan dengan cara mempelajari dan membanding-bandingkan ajaran kepercayaan kelompok lain"},
+      {"id": "D", "text": "Meningkatkan kesadaran kelompok akan agama nya masing-masing sehingga konsolidasi intern kelompok semakin kuat"},
+      {"id": "E", "text": "Membiarkan masing-masing kelompok agama menjalankan ibadah sesuai dengan ajarannya selama tidak bertentangan dengan hukum"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q29",
+    "text": "Dalam unjuk rasa menentang pengesahan sejumlah rancangan undang-undang, termasuk revisi Kitab Undang-Undang Hukum Pidana (KUHP) dan revisi UU Komisi Pemberantasan Korupsi (KPK), seorang mahasiswa dilaporkan mengalami luka parah. Upaya dalam menciptakan reintegrasi sosial adalah...",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "memberi himbauan edukatif terkait larangan demo anarkis"},
+      {"id": "B", "text": "menyatakan permusuhan, kebencian atau penghinaan"},
+      {"id": "C", "text": "penyalahgunaan atau penodaan terhadap suatu agama yang dianut di Indonesia"},
+      {"id": "D", "text": "menggunakan lisan atau tulisan menghasut supaya melakukan perbuatan pidana atau kekerasan"},
+      {"id": "E", "text": "melaporkan kepada kalpori bahwa akan mengadakan demo"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q30",
+    "text": "Gambar di atas menunjukkan pola perubahan sosial, yaitu...",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img14.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "bergerak menuju ke arah tujuan tertentu saja"},
+      {"id": "B", "text": "masyarakat berkembang dari solidaritas mekanik ke organik"},
+      {"id": "C", "text": "kehidupan masyarakat berubah secara linear"},
+      {"id": "D", "text": "masyarakat berkembang dari primitif ke modern"},
+      {"id": "E", "text": "tidak ada batas yang jelas antara ketiga pola hidup (berulang)"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q31",
+    "text": "Terdapat perubahan signifikan dalam pendekatan belajar menggunakan kurikulum 2013 bagi siswa SD sampai dengan SMA/SMK/MA jika dibandingkan sengan kurikulum tahun 2006. Kini murid dipercaya penuh untuk menggali potensi dirinya menggunakan pendekatan saintifik sehingga pembelajaran menjadi lebih bermakna. Mereka dipersiapkan untuk bisa survive pada persaingan bebas nanti ketika saatnya mereka berkiprah di masyarakat. Teks tersebut merupakan bentuk perubahan sosial ...",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "besar"},
+      {"id": "B", "text": "dikehendaki"},
+      {"id": "C", "text": "lambat"},
+      {"id": "D", "text": "cepat"},
+      {"id": "E", "text": "Proses"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q32",
+    "text": "Pada Mei 1998 terjadi kerusuhan massif yang terjadi hampir di seluruh sudut tanah air. Demonstrasi ini dilakukan oleh ribuan mahasiswa universitas tiap wilayah, serta tewasnya 4 mahasiswa universitas trisakti yang tertembak dalam demonstrasi mei 1998 memicu kekacauan yang sangat besar. Berdasarkan ilustrasi diatas, manakah yang termasuk faktor penyebab konflik Mei 1998…",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img15.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Krisis finansial Asia atau krisis moneter tahun sebelumnya"},
+      {"id": "B", "text": "Masyarakat tidak menerima gaji yang harusnya diperoleh"},
+      {"id": "C", "text": "Perbedaan ideologi dan paham antara masyarakat desa dengan kota"},
+      {"id": "D", "text": "Politik yang sangat stabil membuat masyarakat bosan"},
+      {"id": "E", "text": "Diskriminasi besar-besaran antara ras agama islam dengan katolik"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q33",
+    "text": "Berdasarkan gambar diatas pola perubahan masyarakat karena tuntutan zaman yang semakin modern maka dampak dari pola perubahan tersebut adalah…. ",
+    "type": "image",
+    "imageUrl":"../Sosiologi/img16.png",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Peningkatan isolasi sosial"},
+      {"id": "B", "text": "Penurunan ketergantungan pada komunikasi online"},
+      {"id": "C", "text": "Perubahan dalam struktur keluarga"},
+      {"id": "D", "text": "Berkurangnya peran komunikasi dalam kehidupan sehari-hari"},
+      {"id": "E", "text": "Meningkatnya aksesibilitas informasi"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q34",
+    "text": "Saat ini, banyak remaja yang memiliki gadget lebih dari satu. Hal ini dikarenakan mereka mengikuti trend yang berlaku di masyarakat. Pengaruh gadget sebagai satu diantara contoh perubahan kecil tidak memiliki pengaruh yang besar karena…",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "Tidak bertentangan dengan budaya masyarakat"},
+      {"id": "B", "text": "Mengikuti perkembangan zaman yang makin maju"},
+      {"id": "C", "text": "Hanya sebagai kebutuhan sekunder"},
+      {"id": "D", "text": "Hanya diikuti golongan tertentu saja"},
+      {"id": "E", "text": "Hanya menguntungkan salah satu pihak"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q35",
+    "text": "Globalisasi di bidang ekonomi tampak antara lain dengan menjamurnya pusat belanja berupa mall yang menawarkan berbagai dagangan yang sama dengan mall lainnya. Berbagai makanan, minuman, pakaian maupun jasa dengan merk internasional bisa dijumpai di semua mall, dan dikerjakan oleh orang – orang yang terspesialisasi. Dampak positif globalisasi sesuai ilustrasi tersebut bagi peningkatan taraf hidup masyarakat adalah ….",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "menambah modal bagi pedagang"},
+      {"id": "B", "text": "berkembangnya pola hidup mewah"},
+      {"id": "C", "text": "membuka lapangan kerja"},
+      {"id": "D", "text": "meningkatkan pengetahuan masyarakat"},
+      {"id": "E", "text": "meningkatkan gaya hidup konsumtif"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q36",
+    "text": "Masyarakat papan bawah secara teoritis sangat tertolong dengan program BPJS Kesehatan yang memberikan jaminan berobat dari tingkat puskesmas hingga rumah sakit. Namun rumah sakit kewalahan menangani pasien yang membludak. Pasien musti sabar mengikuti prosedur berliku dengan waktu menunggu yang lama untuk mendapat pengobatan melalui BPJS. Beberapa rumah sakit, terlebih rumah sakit swasta kadang lebih mengutamakan menangani pasien non BPJS terlebih dahulu. Perlakuan pasien BPJS dan non BPJS secara berbeda itu menunjukkan adanya",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "diskriminasi"},
+      {"id": "B", "text": "monopoli"},
+      {"id": "C", "text": "kecemburuan"},
+      {"id": "D", "text": "konflik"},
+      {"id": "E", "text": "dominasi"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q37",
+    "text": "Di keluarga modern yang sibuk dengan urusan bisnis dan karir, hak anak untuk memperoleh pendidikan informal dari keluarga sering terabaikan sehingga anak – anak mengalami krisis terhadap nilai – nilai dasar seperti sopan santun dan keagamaan. Hal itu tampak dari perilaku sebagian siswa di lingkungan sekolah yang kurang bisa menerapkan tata pergaulan yang baik serta tidak bisa baca tulis Al Quran bagi penganut Islam. Bagi organisasi kerohanian Islam yang dikelola oleh OSIS, ketidkmampuan baca tulis Al Quran sebagian siswa ini bisa menjadi ladang mengabdi kepada nusa bangsa dalam mengatasi ketimpangan sosial tersebut yaitu melalui",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "mengadakan bimbingan baca tulis Al Quran melalui tutor sebaya"},
+      {"id": "B", "text": "mengadakan seminar bagaimana bersopan santun"},
+      {"id": "C", "text": "sesering mungkin mengingatkan siswa muslim untuk rutin beribadah"},
+      {"id": "D", "text": "mengajak siswa untuk aktif dalam kegiatan OSIS"},
+      {"id": "E", "text": "memberitahu orangtua akan ketidakmampuan anaknya"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q38",
+    "text": "ketimpangan sosial yang terjadi di masyarakat pada menimbulkan masalah sosial yang beragam ,seperti kenakalan remaja, munculnya angka kriminalitas, pencemaran lingkungan, dan sebagainya. Upaya yang dapat dilakukan untuk mengatasi , masalah ketimpangan sosial tersebut",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "meningkatkan kualitas penduduk melalui Pendidikan, Kesehatan, maupun pemberdayaan kelompok di masyarakat"},
+      {"id": "B", "text": "menciptakan peluang kerja dengan membuka lapangan pekerjaan yang memanfaatkan kondisi lingkungan sekitar"},
+      {"id": "C", "text": "melakukan pendekatan kepada masyarakat tanpa membeda-bedakan"},
+      {"id": "D", "text": "mobilitas sosial dengan melakukan pemerataan penduduk"},
+      {"id": "E", "text": "mengadakan penyuluhan di daerah-daerah"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "q39",
+    "text": "Tidak bisa dipungkiri bahwa globalisasi akan menimbulkan perubahan di semua negara. Nilai dan norma yang selama ini menjadi acuan berperilaku warga masyarakat perlahan mengalami pengikisan makna sehingga generasi selanjutnya tidak lagi menjadikannya sebagai pedoman hidup. Jika kondisi ini dibiarkan maka generasi mendatang tidak lagi bisa memiliki jatidiri sebagai bangsa Indonesia, karena nilai hidupnya hanya diwarnai nilai – nilai global yang diserap melalui berbagai cara. Hal demikian menjadi keprihatinan semua pihak sehingga dibutuhkan menghidupkan kembali kearifan local untuk …",
+    "type": "text",
+    "points": 10,
+    "options": [
+      {"id": "A", "text": "mengembangkan tradisi baru"},
+      {"id": "B", "text": "menjaga identitas sebagai bangsa"},
+      {"id": "C", "text": "mencari bentuk jatidiri bangsa"},
+      {"id": "D", "text": "mengenang tradisi masa lalu"},
+      {"id": "E", "text": "mengenalkan nilai-nilai leluhur"}
+    ],
+    "correctAnswer": "C"
+  },
+  {
+  "id": "q40",
+  "text": "Dari ciri-ciri di atas, manakah yang merupakan ciri khas kelompok sosial?",
+  "type": "image",
+    "imageUrl":"../Sosiologi/img17.png",
+  "points": 10,
+  "options": [
+    {"id": "A", "text": "1, 2, 3"},
+    {"id": "B", "text": "2, 3, 4"},
+    {"id": "C", "text": "3, 4, 5"},
+    {"id": "D", "text": "1, 4, 5"},
+    {"id": "E", "text": "2, 4, 5"}
+  ],
+  "correctAnswer": "C"
+}
+      ]
+    
+    }
+}
