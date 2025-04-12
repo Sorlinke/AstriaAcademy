@@ -77,7 +77,7 @@
       {"id": "D", "text": "5 tahun"},
       {"id": "E", "text": "575 tahun"}
     ],
-    "correctAnswer": "D"
+    "correctAnswer": "E"
   },
   {
     "id": "q6",
@@ -251,7 +251,7 @@
       {"id": "D", "text": "Kelompok sosial Sekunder"},
       {"id": "E", "text": "Kelompok sosial In group"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "B"
   },
   {
     "id": "q18",
@@ -265,7 +265,7 @@
       {"id": "D", "text": "paguyuban"},
       {"id": "E", "text": "Kerumunan"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "B"
   },
   {
     "id": "q19",
@@ -294,7 +294,7 @@
       {"id": "D", "text": "Menerapkan prinsip yang mementingkan usaha daripada hasil instan untuk diri sendiri dan lingkungan"},
       {"id": "E", "text": "Diam untuk berjaga-jaga jika suatu hari butuh"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "D"
   },
   {
     "id": "q21",
@@ -308,7 +308,7 @@
       {"id": "D", "text": "memanfaatkan relasi petinggi perusahaan untuk agar diterima bekerja di perusahaan tersebut."},
       {"id": "E", "text": "membuat orang lain merasa risih dan tidak nyaman sehingga menyebabkan mereka memisahkan diri dari kelompok sosialnya."}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q22",
@@ -322,7 +322,7 @@
       {"id": "D", "text": "sumber daya alam kurang"},
       {"id": "E", "text": "tingkat pendidikan rendah"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "E"
   },
   {
     "id": "q23",
@@ -336,7 +336,7 @@
       {"id": "D", "text": "Menghormati hak asasi manusia dalam kehidupan"},
       {"id": "E", "text": "Warga negara bebas untuk memeluk agama sesuai keyakinannya"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q24",
@@ -350,7 +350,7 @@
       {"id": "D", "text": "Perilaku deviasi yang dilakukan Arsyon"},
       {"id": "E", "text": "Pengaruh interaksi primer di sekitar Arsyon"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q25",
@@ -365,7 +365,7 @@
       {"id": "D", "text": "Evaluasi strategi penanggulangan dari pemerintah dan masyarakat, termasuk peningkatan keamanan dan pendidikan kesadaran seperti pembangunan program pemuda dan peningkatan kehadiran polisi"},
       {"id": "E", "text": "membuat penanggulangan dengan Kerjasama antara orangtua, pihak sekolah dan kepolisian dengan melakukan seminar dan penyuluhan berbayar secara online"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "D"
   },
   {
     "id": "q26",
@@ -394,7 +394,7 @@
       {"id": "D", "text": "Tidak ada implikasi praktis"},
       {"id": "E", "text": "Tidak diperlukan dalam pemetaan konflik"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "B"
   },
   {
     "id": "q28",
@@ -408,7 +408,7 @@
       {"id": "D", "text": "Meningkatkan kesadaran kelompok akan agama nya masing-masing sehingga konsolidasi intern kelompok semakin kuat"},
       {"id": "E", "text": "Membiarkan masing-masing kelompok agama menjalankan ibadah sesuai dengan ajarannya selama tidak bertentangan dengan hukum"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "E"
   },
   {
     "id": "q29",
@@ -422,7 +422,7 @@
       {"id": "D", "text": "menggunakan lisan atau tulisan menghasut supaya melakukan perbuatan pidana atau kekerasan"},
       {"id": "E", "text": "melaporkan kepada kalpori bahwa akan mengadakan demo"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "E"
   },
   {
     "id": "q30",
@@ -437,7 +437,7 @@
       {"id": "D", "text": "masyarakat berkembang dari primitif ke modern"},
       {"id": "E", "text": "tidak ada batas yang jelas antara ketiga pola hidup (berulang)"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "E"
   },
   {
     "id": "q31",
@@ -451,7 +451,7 @@
       {"id": "D", "text": "cepat"},
       {"id": "E", "text": "Proses"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "B"
   },
   {
     "id": "q32",
@@ -466,7 +466,7 @@
       {"id": "D", "text": "Politik yang sangat stabil membuat masyarakat bosan"},
       {"id": "E", "text": "Diskriminasi besar-besaran antara ras agama islam dengan katolik"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q33",
@@ -481,7 +481,7 @@
       {"id": "D", "text": "Berkurangnya peran komunikasi dalam kehidupan sehari-hari"},
       {"id": "E", "text": "Meningkatnya aksesibilitas informasi"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "E"
   },
   {
     "id": "q34",
@@ -495,7 +495,7 @@
       {"id": "D", "text": "Hanya diikuti golongan tertentu saja"},
       {"id": "E", "text": "Hanya menguntungkan salah satu pihak"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "D"
   },
   {
     "id": "q35",
@@ -523,7 +523,7 @@
       {"id": "D", "text": "konflik"},
       {"id": "E", "text": "dominasi"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q37",
@@ -537,7 +537,7 @@
       {"id": "D", "text": "mengajak siswa untuk aktif dalam kegiatan OSIS"},
       {"id": "E", "text": "memberitahu orangtua akan ketidakmampuan anaknya"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q38",
@@ -551,7 +551,7 @@
       {"id": "D", "text": "mobilitas sosial dengan melakukan pemerataan penduduk"},
       {"id": "E", "text": "mengadakan penyuluhan di daerah-daerah"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "A"
   },
   {
     "id": "q39",
@@ -565,7 +565,7 @@
       {"id": "D", "text": "mengenang tradisi masa lalu"},
       {"id": "E", "text": "mengenalkan nilai-nilai leluhur"}
     ],
-    "correctAnswer": "C"
+    "correctAnswer": "B"
   },
   {
   "id": "q40",
@@ -580,7 +580,7 @@
     {"id": "D", "text": "1, 4, 5"},
     {"id": "E", "text": "2, 4, 5"}
   ],
-  "correctAnswer": "C"
+  "correctAnswer": "B"
 }
       ]
     
